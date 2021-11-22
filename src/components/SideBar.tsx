@@ -14,7 +14,6 @@ interface SideBarProps {
 }
 
 export function SideBar(props: SideBarProps) {
-  // Complete aqui
   const [genres, setGenres] = useState<GenreResponseProps[]>([]);
 
   function handleClickButton(id: number) {
@@ -42,7 +41,6 @@ export function SideBar(props: SideBarProps) {
         />
       ))}
     </div>
-
   </nav>
   );
 }

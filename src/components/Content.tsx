@@ -24,13 +24,8 @@ interface ContentProps {
 }
 
 export function Content(props: ContentProps) {
-  // Complete aqui
-  
   const [movies, setMovies] = useState<MovieProps[]>([]);
   const [selectedGenre, setSelectedGenre] = useState<GenreResponseProps>({} as GenreResponseProps);
-
-  
-  
 
   useEffect(() => {
     api.get<MovieProps[]>(`movies/?Genre_id=${props.selectedGenreId}`).then(response => {
